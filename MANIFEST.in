@@ -1,0 +1,19 @@
+graft src
+graft tests
+graft data
+
+include .bumpversion.cfg
+include .editorconfig
+include .pre-commit-config.yaml
+include pytest.ini
+
+include README.md
+
+prune execution/.pytest_cache
+
+global-exclude venv
+global-exclude *.py[cod]
+global-exclude __pycache__/*
+global-exclude *.so
+global-exclude *.dylib
+global-exclude *.md
