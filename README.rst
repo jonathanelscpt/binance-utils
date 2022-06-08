@@ -61,3 +61,18 @@ To run the cli utility and fetch account balances
 
     $ binance-utils
 
+
+To add cli auto-completion:
+
+.. code-block:: bash
+
+    $ binance-utils --help
+    Usage: binance-utils [OPTIONS]
+
+    Options:
+      --install-completion [bash|zsh|fish|powershell|pwsh]
+                                      Install completion for the specified shell.
+      --show-completion [bash|zsh|fish|powershell|pwsh]
+                                      Show completion for the specified shell, to
+                                      copy it or customize the installation.
+      --help                          Show this message and exit.
