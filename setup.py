@@ -29,12 +29,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     python_requires='>=3.8',
-    install_requires=[
-        'python-binance',
-        'typer',
-        'tabulate',
-        'Pygments'
-    ],
+    install_requires=['python-binance', 'typer', 'tabulate', 'Pygments', 'pre-commit'],
     entry_points={
         'console_scripts': [
             'binance-utils = binance_utils.cli:main',
