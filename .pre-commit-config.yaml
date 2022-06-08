@@ -1,7 +1,7 @@
 exclude: ^(\.tox|ci/templates|\.bumpversion\.cfg)(/|$)
 repos:
   - repo: 'https://github.com/pre-commit/pre-commit-hooks'
-    rev: v4.3.0
+    rev: v4.2.0
     hooks:
       - id: check-ast
       - id: check-builtin-literals
@@ -31,11 +31,3 @@ repos:
     rev: 3.9.2
     hooks:
       - id: flake8
-  - repo: local
-    hooks:
-      - id: check-browser-fixture-map
-        name: Check browser fixture map
-        entry: ./hooks/browser_fixture_map.sh
-        language: script
-        pass_filenames: false
-        files: \.sh$
